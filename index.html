@@ -2,6 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/global.css">
+<script type="text/javascript">
+ function ispisiPodatke() { 
+    var name = document.getElementById("ime").value;
+    var lastName = document.getElementById("prezime").value;
+    alert(name + " " + lastName);
+   } 
+</script>
+
 </head>
 <body>
 <div class="container">
@@ -12,6 +20,7 @@
 <div class="element">
 <label for="prezime">Prezime</label>
 <input id="prezime" type="text">
+<button onclick="ispisiPodatke()">SUBMIT</button>
 </div>
 </div>
 </body>
